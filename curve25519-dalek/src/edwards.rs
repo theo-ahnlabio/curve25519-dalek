@@ -748,13 +748,11 @@ impl EdwardsPoint {
     pub fn mul_base(scalar: &Scalar) -> Self {
         #[cfg(not(feature = "precomputed-tables"))]
         {
-            println!("mul_base_0");
             scalar * constants::ED25519_BASEPOINT_POINT
         }
 
         #[cfg(feature = "precomputed-tables")]
         {
-            println!("mul_base_1");
             scalar * constants::ED25519_BASEPOINT_TABLE
         }
     }
