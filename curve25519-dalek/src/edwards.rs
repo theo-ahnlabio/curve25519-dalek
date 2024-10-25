@@ -770,7 +770,6 @@ impl EdwardsPoint {
         let s = Scalar {
             bytes: clamp_integer(bytes),
         };
-        dbg!(&s)
         s * self
     }
 
@@ -783,7 +782,6 @@ impl EdwardsPoint {
         let s = Scalar {
             bytes: clamp_integer(bytes),
         };
-        dbg!(&s)
         Self::mul_base(&s)
     }
 }
