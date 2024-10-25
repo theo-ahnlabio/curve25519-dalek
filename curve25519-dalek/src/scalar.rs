@@ -228,7 +228,7 @@ pub struct Scalar {
     /// public non-legacy uses, invariant #2
     /// always holds.
     ///
-    pub(crate) bytes: [u8; 32],
+    pub bytes: [u8; 32],
 }
 
 impl Scalar {
